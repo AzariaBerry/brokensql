@@ -20,8 +20,6 @@ var connection = mysql.createConnection({
   });
 
 
-connection.connect();
-
   app.get("/", (req, res) => {
     res.render("index");
 });
@@ -89,7 +87,7 @@ app.post("/register",[
   else {
     //if no errors, add to the database
     let insert = "insert into customers(??, ??, ??) values (?, ?, ?)";
-    connection.query(insert, ["name", "username", "email", name, username, email], (err,results)=> {
+    connection.query(insert, [name, username, email,"name", "username", "email"], (err,results)=> {
       //if doesnt work, get big mad
       if (err) {
         console.log(err);
@@ -99,12 +97,11 @@ app.post("/register",[
     });
   }
 });
-connection.query('select * from customers', function (error, results, fields) {
-  if (error) throw error;
-  console.log('The solution is: ', results);
-});
+//connection.query('select * from customers', function (error, results, fields) {
+  //if (error) throw error;
+  //console.log('The solution is: ', results);
+//});
 
-connection.end();
 
 app.listen(PORT, () => {
   console.log(`server running on ${PORT}`)
