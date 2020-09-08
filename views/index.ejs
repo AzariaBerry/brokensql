@@ -10,13 +10,13 @@
     <!--mayhap this needs an action?-->
     <form method="POST" action="/register">
         <label for="name">name</label>
-        <input id="name" maxlength="15" size="15" minlength="2" pattern="[^-']([a-zA-ZÀ-ÖØ-öø-ÿ '-](?!.*''|--|  |- |' | '| -.*))+" placeholder="myname"></input>
+        <input id="name" name="name" maxlength="15" size="15" minlength="2" pattern="[^-']([a-zA-ZÀ-ÖØ-öø-ÿ '-](?!.*''|--|  |- |' | '| -.*))+" placeholder="myname"></input>
         </br>
         <label for="username">username</label>
-        <input id="username" maxlength="18" size="18" minlength="3" pattern="[^-']([a-zA-ZÀ-ÖØ-öø-ÿ0-9 '-](?!.*''|--|  |- |' | '| -.*))+" placeholder="myUsername2">
+        <input id="username" name="username" maxlength="18" size="18" minlength="3" pattern="[^-']([a-zA-ZÀ-ÖØ-öø-ÿ0-9 '-](?!.*''|--|  |- |' | '| -.*))+" placeholder="myUsername2">
         </br>
         <label for="email">email</label>
-        <input id="email" maxlength="50" size="25" minlength="12" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="myemail@email.com">
+        <input id="email" name="email" maxlength="50" size="25" minlength="12" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="myemail@email.com">
         </br>
         <input type="submit">
     </form>

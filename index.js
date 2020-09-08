@@ -74,8 +74,8 @@ app.post("/register",[
   let errors = result.errors;  
   // Show me the errors in the console
   for (let key in errors) {
-      console.log(errors[key].value);
-  }
+    console.log("Validation failed:" + errors[key].msg);
+}
     let name = req.body.name;
     let username = req.body.username;
     let email = req.body.email;
@@ -87,7 +87,7 @@ app.post("/register",[
   else {
     //if no errors, add to the database
     let insert = "insert into customers(??, ??, ??) values (?, ?, ?)";
-    connection.query(insert, [name, username, email,"name", "username", "email"], (err,results)=> {
+    connection.query(insert, [ "name", "username", "email",name, username, email], (err,results)=> {
       //if doesnt work, get big mad
       if (err) {
         console.log(err);
@@ -97,10 +97,14 @@ app.post("/register",[
     });
   }
 });
-//connection.query('select * from customers', function (error, results, fields) {
-  //if (error) throw error;
-  //console.log('The solution is: ', results);
-//});
+
+app.get("/users", (req, res) => {
+  connection.query('select * from customers', function (error, results, fields) {
+  if (error) throw error;
+  console.log('The solution is: ', results);
+  res.send("results");
+});
+  });
 
 
 app.listen(PORT, () => {
