@@ -4,18 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <title>secure sql</title>
 </head>
 <body>
+    <div class="w3-center semi-condensed w3-panel">
+        <h1>
+        <span class="w3-hover-text-red">W</span>
+        <span class="w3-hover-text-orange">e</span>
+        <span class="w3-hover-text-yellow">l</span>
+        <span class="w3-hover-text-green">c</span>
+        <span class="w3-hover-text-blue">o</span>
+        <span class="w3-hover-text-cyan">m</span>
+        <span class="w3-hover-text-purple">e</span>
+        <span class="w3-hover-text-pink">T</span>
+        <span class="w3-hover-text-darkmagenta">o</span>
+        <span class="w3-hover-text-pink">T</span>
+        <span class="w3-hover-text-blue">h</span>
+        <span class="w3-hover-text-green">e</span>
+        <span class="w3-hover-text-red">R</span>
+        <span class="w3-hover-text-orange">a</span>
+        <span class="w3-hover-text-yellow">i</span>
+        <span class="w3-hover-text-green">n</span>
+        <span class="w3-hover-text-blue">b</span>
+        <span class="w3-hover-text-cyan">o</span>
+        <span class="w3-hover-text-purple">w</span>
+        <span class="w3-hover-text-pink">C</span>
+        <span class="w3-hover-text-darkmagenta">a</span>
+        <span class="w3-hover-text-cyan">t</span>
+        <span class="w3-hover-text-red">c</span>
+        <span class="w3-hover-text-orange">h</span>
+        <span class="w3-hover-text-yellow">e</span>
+        <span class="w3-hover-text-green">r</span>
+        <span class="w3-hover-text-blue">s</span>
+        </h1>
+    </div>
+
     <!--mayhap this needs an action?-->
     <form method="POST" action="/register">
         <label for="name">name</label>
+        <br>
         <input id="name" name="name" maxlength="15" size="15" minlength="2" pattern="[^-']([a-zA-ZÀ-ÖØ-öø-ÿ '-](?!.*''|--|  |- |' | '| -.*))+" placeholder="myname"></input>
         </br>
         <label for="username">username</label>
+        <br>
         <input id="username" name="username" maxlength="18" size="18" minlength="3" pattern="[^-']([a-zA-ZÀ-ÖØ-öø-ÿ0-9 '-](?!.*''|--|  |- |' | '| -.*))+" placeholder="myUsername2">
         </br>
         <label for="email">email</label>
+        <br>
         <input id="email" name="email" maxlength="50" size="25" minlength="12" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="myemail@email.com">
         </br>
         <input type="submit">
