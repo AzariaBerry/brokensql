@@ -1,2 +1,184 @@
 /*whatever you want*/
 
+body {
+    background-image: url(rainbow.png);
+    color: purple;
+}
+
+h1 {
+    background-color: white;
+    color: black;
+}
+
+
+
+.redtext{
+        color:  black;
+        animation: color-me-in-red 5s infinite; /* other keywords like "infinite alternate" can be useful here */
+        
+}
+    @keyframes color-me-in-red {
+        /* You could think of as "step 1" */
+        0% {
+        color: black;
+        }
+        /* You could think of as "step 2" */
+        50% {
+        color: red;
+        }
+        100%{
+            color: black;
+        }
+    }
+
+    .orangetext{
+        color:  black;
+        animation: color-me-in-orange 5s infinite; 
+        
+}
+    @keyframes color-me-in-orange {
+        
+        0% {
+        color: black;
+        }
+        
+        50% {
+        color: orange;
+        }
+        100%{
+            color: black;
+        }
+    }
+
+    .yellowtext{
+        color:  black;
+        animation: color-me-in-yellow 5s infinite; 
+        
+}
+    @keyframes color-me-in-yellow {
+    
+        0% {
+        color: black;
+        }
+        
+        50% {
+        color: yellow;
+        }
+        100%{
+            color: black;
+        }
+    }
+
+    .greentext{
+        color:  black;
+        animation: color-me-in-green 5s infinite; 
+        
+}
+    @keyframes color-me-in-green {
+        
+        0% {
+        color: black;
+        }
+        
+        50% {
+        color: green;
+        }
+        100%{
+            color: black;
+        }
+    }
+
+    .bluetext{
+        color:  black;
+        animation: color-me-in-blue 5s infinite; 
+        
+}
+    @keyframes color-me-in-blue {
+        
+        0% {
+        color: black;
+        }
+        
+        50% {
+        color: blue;
+        }
+        100%{
+            color: black;
+        }
+    }
+
+    .cyantext{
+        color:  black;
+        animation: color-me-in-cyan 5s infinite; 
+        
+}
+    @keyframes color-me-in-cyan {
+        
+        0% {
+        color: black;
+        }
+        
+        50% {
+        color: cyan;
+        }
+        100%{
+            color: black;
+        }
+    }
+
+    .purpletext{
+        color:  black;
+        animation: color-me-in-purple 5s infinite; 
+        
+}
+    @keyframes color-me-in-purple {
+        
+        0% {
+        color: black;
+        }
+        
+        50% {
+        color: purple;
+        }
+        100%{
+            color: black;
+        }
+    }
+
+    .pinktext{
+        color:  black;
+        animation: color-me-in-pink 5s infinite; 
+        
+}
+    @keyframes color-me-in-pink {
+        
+        0% {
+        color: black;
+        }
+        
+        50% {
+        color: pink;
+        }
+        100%{
+            color: black;
+        }
+    }
+
+    .darkmagentatext{
+        color:  black;
+        animation: color-me-in-darkmagenta 5s infinite; 
+        
+}
+    @keyframes color-me-in-darkmagenta {
+        
+        0% {
+        color: black;
+        }
+        
+        50% {
+        color:darkmagenta;
+        }
+        100%{
+            color: black;
+        }
+    }
